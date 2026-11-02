@@ -1,0 +1,63 @@
+{
+	"name": "n8n-nodes-raziel",
+	"version": "0.1.0",
+	"description": "n8n node for Raziel's free private-market and startup finance calculators: IRR, XIRR, MOIC, TVPI/DPI, SAFE conversion, convertible notes, dilution, cap tables, QSBS, runway and founder metrics.",
+	"license": "MIT",
+	"homepage": "https://github.com/Raziel-Holdings/n8n-nodes-raziel#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"raziel",
+		"irr",
+		"xirr",
+		"moic",
+		"venture capital",
+		"private equity",
+		"startup",
+		"calculator"
+	],
+	"author": {
+		"name": "Raziel",
+		"email": "jordan@raziel.co"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Raziel-Holdings/n8n-nodes-raziel.git"
+	},
+	"scripts": {
+		"generate": "node scripts/generate.mjs",
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "node --test test/roundtrip.node.mjs",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [],
+		"nodes": [
+			"dist/nodes/Raziel/Raziel.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.54.6",
+		"eslint": "9.32.0",
+		"n8n-workflow": "2.16.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"bugs": {
+		"url": "https://github.com/Raziel-Holdings/n8n-nodes-raziel/issues"
+	}
+}

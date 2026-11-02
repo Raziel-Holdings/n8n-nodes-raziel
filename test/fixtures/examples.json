@@ -1,0 +1,226 @@
+{
+	"irr": {
+		"initial_investment_usd": 100000,
+		"cash_flows_usd": [
+			10000,
+			25000,
+			30000,
+			40000,
+			50000
+		]
+	},
+	"xirr": {
+		"cash_flows": [
+			{
+				"date": "2021-03-01",
+				"amount_usd": -50000
+			},
+			{
+				"date": "2022-06-15",
+				"amount_usd": -25000
+			},
+			{
+				"date": "2025-09-30",
+				"amount_usd": 160000
+			}
+		]
+	},
+	"moic": {
+		"invested_usd": 1000000,
+		"value_returned_usd": 2500000,
+		"years": 5
+	},
+	"cagr": {
+		"start_value_usd": 10000,
+		"end_value_usd": 25000,
+		"years": 5
+	},
+	"tvpiDpi": {
+		"paid_in_usd": 10000000,
+		"distributions_usd": 3000000,
+		"nav_usd": 9000000,
+		"commitment_usd": 12500000
+	},
+	"carriedInterest": {
+		"fund_size_usd": 100000000,
+		"management_fee_pct": 2,
+		"fee_years": 10,
+		"mode": "moic",
+		"gross_moic": 3,
+		"hurdle_pct": 8,
+		"catch_up": "full",
+		"carry_pct": 20,
+		"years": 10
+	},
+	"safeConversion": {
+		"safe_type": "post",
+		"investment_usd": 500000,
+		"valuation_cap_usd": 8000000,
+		"discount_pct": 20,
+		"existing_shares": 10000000,
+		"existing_pool_shares": 1000000,
+		"priced_round_pre_money_usd": 20000000,
+		"priced_round_raise_usd": 5000000,
+		"target_pool_pct": 10
+	},
+	"convertibleNote": {
+		"principal_usd": 250000,
+		"interest_rate_pct": 6,
+		"interest_mode": "simple",
+		"years": 1.5,
+		"valuation_cap_usd": 6000000,
+		"discount_pct": 20,
+		"priced_round_pre_money_usd": 15000000,
+		"round_price_per_share_usd": 1.5
+	},
+	"startupValuation": {
+		"pre_money_usd": 5000000,
+		"investment_usd": 1000000,
+		"shares_before": 10000000,
+		"option_pool_pct": 10
+	},
+	"dilution": {
+		"founders_pct": 90,
+		"option_pool_pct": 10,
+		"rounds": [
+			{
+				"name": "Seed",
+				"raise_usd": 3000000,
+				"pre_money_usd": 12000000,
+				"target_pool_pct": 10
+			},
+			{
+				"name": "Series A",
+				"raise_usd": 12000000,
+				"pre_money_usd": 48000000,
+				"target_pool_pct": 12
+			}
+		]
+	},
+	"optionPool": {
+		"pre_money_usd": 16000000,
+		"raise_usd": 4000000,
+		"target_pool_pct": 15,
+		"existing_pool_pct": 5,
+		"founders_pct": 85,
+		"fully_diluted_shares": 10000000
+	},
+	"proRata": {
+		"current_ownership_pct": 2,
+		"round_raise_usd": 10000000,
+		"post_money_usd": 50000000,
+		"planned_check_usd": 100000
+	},
+	"liquidationPreference": {
+		"exit_value_usd": 60000000,
+		"common_shares": 10000000,
+		"seniority": "stacked",
+		"series": [
+			{
+				"name": "Seed",
+				"invested_usd": 3000000,
+				"shares": 2000000,
+				"preference_multiple": 1,
+				"participation": "none"
+			},
+			{
+				"name": "Series A",
+				"invested_usd": 15000000,
+				"shares": 4000000,
+				"preference_multiple": 1,
+				"participation": "capped",
+				"participation_cap_multiple": 3
+			}
+		]
+	},
+	"secondarySale": {
+		"shares_sold": 50000,
+		"price_basis": "price",
+		"reference_price_per_share_usd": 12,
+		"fully_diluted_shares": 40000000,
+		"discount_pct": 25,
+		"cost_basis_usd": 50000,
+		"fees_pct": 3
+	},
+	"qsbs": {
+		"acquired_date": "2020-06-01",
+		"sold_date": "2026-06-15",
+		"basis_usd": 100000,
+		"proceeds_usd": 12000000,
+		"prior_gain_usd": 0
+	},
+	"taxDeadlines": {
+		"stock_grant_date": "2026-11-02",
+		"qsbs_acquired_date": "2025-09-01",
+		"as_of_date": "2026-11-02"
+	},
+	"runway": {
+		"cash_usd": 2000000,
+		"mode": "pl",
+		"monthly_revenue_usd": 60000,
+		"revenue_growth_pct": 8,
+		"monthly_expenses_usd": 180000,
+		"expense_growth_pct": 2
+	},
+	"capRate": {
+		"property_value_usd": 500000,
+		"gross_income_usd": 70000,
+		"operating_expenses_usd": 20000,
+		"units": 4
+	},
+	"cashOnCash": {
+		"price_usd": 400000,
+		"down_payment_pct": 25,
+		"closing_costs_usd": 12000,
+		"monthly_rent_usd": 3200,
+		"vacancy_pct": 5,
+		"operating_expenses_usd": 9000,
+		"interest_rate_pct": 7,
+		"loan_term_years": 30
+	},
+	"portfolioAllocation": {
+		"holdings": [
+			{
+				"name": "S&P 500 Index",
+				"asset_class": "Stocks",
+				"value_usd": 150000
+			},
+			{
+				"name": "Bitcoin",
+				"asset_class": "Crypto",
+				"value_usd": 25000
+			},
+			{
+				"name": "Rental Property",
+				"asset_class": "Real Estate",
+				"value_usd": 200000
+			}
+		]
+	},
+	"burnMultiple": {
+		"net_burn_usd": 2000000,
+		"net_new_arr_usd": 1600000
+	},
+	"ruleOf40": {
+		"revenue_growth_pct": 60,
+		"profit_margin_pct": -15
+	},
+	"ltvCac": {
+		"arpa_monthly_usd": 500,
+		"gross_margin_pct": 80,
+		"monthly_churn_pct": 2,
+		"cac_usd": 6000
+	},
+	"cacPayback": {
+		"sales_marketing_spend_usd": 300000,
+		"new_customers": 50,
+		"arpa_monthly_usd": 500,
+		"gross_margin_pct": 80
+	},
+	"netRevenueRetention": {
+		"starting_mrr_usd": 100000,
+		"expansion_usd": 25000,
+		"contraction_usd": 5000,
+		"churned_usd": 8000
+	}
+}
