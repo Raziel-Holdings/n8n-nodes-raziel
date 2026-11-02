@@ -74,4 +74,5 @@ Results are for education only, not tax, legal or investment advice.
 
 ## Version history
 
+- 0.1.1: published from GitHub Actions with npm provenance; clearer API error messages.
 - 0.1.0: first release with 25 calculators and the Define Term and Search Guides operations.
