@@ -55,6 +55,8 @@
 name: Publish
 
 on:
+  # Manual run from the Actions tab (or the API) publishes the version in package.json.
+  workflow_dispatch:
   push:
     tags:
       # Matches 0.1.0, 1.2.3, 2.0.0-rc.1, etc.
